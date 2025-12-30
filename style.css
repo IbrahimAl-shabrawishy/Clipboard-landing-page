@@ -13,6 +13,7 @@
 
 body {
   min-height: 100vh;
+  font-family: "DM Sans", sans-serif;
 }
 
 /* General */
@@ -40,6 +41,9 @@ body {
   img {
     width: 100%;
   }
+}
+.header .backgroundImage {
+  width: 100%;
 }
 
 .header img.logoHeader {
@@ -99,6 +103,7 @@ button {
       left: -20px;
     }
   }
+
   h4 {
     color: var(--Gray700);
     font-size: 18px;
@@ -121,9 +126,6 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  img {
-    width: 500px;
-  }
 }
 
 /* Supercharge section */
@@ -237,6 +239,10 @@ button {
 /* Responsive all Devices */
 @media (max-width: 1000px) {
   .container {
+    p {
+      padding: 20px;
+    }
+
     .header {
       .logoHeader {
         width: 50px;
@@ -269,6 +275,11 @@ button {
       flex-wrap: wrap;
       justify-content: center;
       text-align: center;
+      .position {
+        img {
+          width: 100%;
+        }
+      }
     }
     .Supercharge {
       .cards {
@@ -281,6 +292,11 @@ button {
       justify-content: center;
     }
 
+    .Clipboard {
+      img {
+        width: 100%;
+      }
+    }
     .btn-header {
       flex-wrap: wrap;
     }
